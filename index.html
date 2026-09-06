@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>Kishan Rakesh</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -34,6 +34,9 @@
                 <a href="#education">Education</a>
             </li>
             <li>
+                <a href="#publications">Publications</a>
+            </li>
+            <li>
                 <a href="#projects">Projects</a>
             </li>
             <li>
@@ -49,7 +52,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Kishan Rakesh</h1>
-            <h2>Software Engineer</h2>
+            <h2>PhD Student &middot; Software Engineer</h2>
             <a href="resume/Kishan_Rakesh_Resume.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
@@ -73,13 +76,13 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        I'm Kishan Rakesh, a second-year Master's student in Computer Science at The University of Texas at Dallas, specializing in software engineering, distributed systems, and accessibility-focused technologies.
+                        I'm Kishan Rakesh, a Computer Science PhD student at The University of Texas at Dallas, where I research <strong>flaky tests and automated test repair</strong> with Professor Shanto Rahman. I work on why tests fail without the code changing, and on fixing them automatically.
                         </p>
                     <p>
-I earned my Bachelor’s in Information Technology from the National Institute of Technology Karnataka and subsequently spent two years as a full-stack software engineer, developing and maintaining large-scale web applications. Currently, I'm conducting research under Professor Shiyi Wei, exploring innovative approaches to software accessibility using machine learning and natural language processing techniques.
+                        Before the PhD I spent two years as a software engineer at Maybank, building the backend for a loan-origination system deployed across 3,000+ bank branches. I completed my M.S. at UT Dallas in Professor Shiyi Wei's lab, where my registered report on web accessibility received in-principle acceptance at ESEM 2026. I hold a B.Tech in Information Technology from NIT Karnataka.
                     </p>
                     <p>
-I deeply value collaborative, innovative environments and am passionate about creating scalable, user-focused solutions with meaningful impact. Upon graduating in May 2026, I aim to contribute to ambitious engineering projects alongside teams committed to technological excellence and solving global-scale problems.
+                        I like problems where the failure is hard to reproduce and the fix has to be proven rather than argued &mdash; which is most of what testing research is. I'm looking for software engineering internships where that kind of rigour is useful, and I'm always happy to talk about testing, tooling, or research.
                     </p>
                 </div>
             </div>
@@ -90,11 +93,35 @@ I deeply value collaborative, innovative environments and am passionate about cr
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="May 2025 – Current">
+            <div data-date="August 2026 – Current">
                 <h3>The University of Texas at Dallas</h3>
-                <h4>Student Researcher</h4>
+                <h4>Graduate Research Assistant &mdash; Flaky Tests &amp; Automated Test Repair</h4>
                 <p>
-                    Conducting research at Dr. Shiyi Wei's lab, leveraging Large Language Models (LLMs), NLP, and machine learning techniques to automate the detection and remediation of software accessibility issues. My work aims to significantly reduce developer effort and improve software usability for individuals relying on assistive technologies.
+                    Research on test reliability with Professor Shanto Rahman. Fixed a flaky test in <a href="https://github.com/kishanrakesh/tinkerpop/pull/1">Apache TinkerPop</a>, tracing it to unordered <code>ConcurrentHashMap</code> iteration: 10/10 NonDex seeds failed before the fix and 20/20 passed after. Dated the defect to its introducing commit and showed the test had been flaky for its entire 4.5-year history, which made <code>git bisect</code> inapplicable as no passing ancestor existed.
+                </p>
+            </div>
+
+            <div data-date="August 2026 – Current">
+                <h3>The University of Texas at Dallas</h3>
+                <h4>Teaching Assistant &mdash; Data Structures and Algorithms</h4>
+                <p>
+                    Teaching assistant for CS 4349. Previously graded Automata Theory and Advanced Algorithms for 180+ students across the 2025&ndash;26 academic year.
+                </p>
+            </div>
+
+            <div data-date="May 2025 – August 2026">
+                <h3>The University of Texas at Dallas</h3>
+                <h4>Graduate Researcher &mdash; Automated Repair of Web Accessibility Labels</h4>
+                <p>
+                    Research in Professor Shiyi Wei's lab. Formulated accessible-name repair as link prediction over the accessibility tree, where the MLP beat the strongest heuristic by 0.34 mean Hit@10. Built the capture and annotation pipeline covering 5 sites and 2,500+ annotated element relations. The resulting registered report has in-principle acceptance at ESEM 2026.
+                </p>
+            </div>
+
+            <div data-date="August 2025 – December 2025">
+                <h3>The University of Texas at Dallas</h3>
+                <h4>Research Project &mdash; YouTube Bot Detection</h4>
+                <p>
+                    With Professor Rishabh Iyer. Compared six MobileNet and ResNet configurations for bot-avatar triage under a recall-first criterion, flagging every bot in the validation set at 84% precision. Built the collection pipeline over the YouTube Data API &mdash; 80K comments and 10K channels screened with a custom OpenCV tool &mdash; and mapped the coordinated networks in Neo4j, finding 200 bot channels funnelling to 35 shared spam domains.
                 </p>
             </div>
 
@@ -121,10 +148,20 @@ I deeply value collaborative, innovative environments and am passionate about cr
         <h2 class="heading">Education</h2>
         <div class="education-block">
             <h3>The University of Texas at Dallas</h3>
-            <span class="education-date">August 2024 - Current</span>
-            <h4>Master of Science in Computer Science (GPA: 4.0/4.0)</h4>
+            <span class="education-date">August 2026 - Current</span>
+            <h4>Doctor of Philosophy in Computer Science (expected May 2030)</h4>
             <p>
-                Pursuing an M.S. in Computer Science at UT Dallas, with a specialization in Data Science. Completed coursework includes:
+                Researching flaky tests and automated test repair with Professor Shanto Rahman.
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>The University of Texas at Dallas</h3>
+            <span class="education-date">August 2024 - May 2026</span>
+            <h4>Master of Science in Computer Science (GPA: 3.97/4.00)</h4>
+            <p>
+                Jonsson School Dean's Graduate Scholarship. Specialization in Data Science. Coursework included:
                 <ul>
                     <li>
                         Design and Analysis of Algorithms
@@ -160,15 +197,37 @@ I deeply value collaborative, innovative environments and am passionate about cr
                     <li>Data Warehousing & Data Mining</li>
                     <li>Distributed Computing Systems</li>
                     <li>Human Computer Interactions</li>
-                    <li>Operating Systems</li>
-                    <li>Data Structures & Algorithms</li>
-                </ul>
+                                </ul>
             </p>
         </div>
         
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
+
+    <div id="publications">
+        <h2 class="heading">Publications</h2>
+        <div class="education-block">
+            <h3>ESEM 2026</h3>
+            <span class="education-date">Registered Report</span>
+            <h4>Contextual Associations Between Webpage Elements for Web Accessibility: An Empirical Study</h4>
+            <p>
+                <strong>K. Rakesh</strong> and S. Wei. Stage 1 Registered Report, in-principle acceptance, International Symposium on Empirical Software Engineering and Measurement, 2026. <a href="https://arxiv.org/abs/2606.27506">arXiv:2606.27506</a>
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Springer LNEE</h3>
+            <span class="education-date">Volume 888, 2022</span>
+            <h4>Optimized Distributed Job Shop Scheduling Using Balanced Job Allocation and Modified Ant Colony Optimization</h4>
+            <p>
+                S. Vivek, <strong>K. Rakesh</strong>, and B. R. Mohan. <a href="https://doi.org/10.1007/978-981-19-1520-8_21">doi:10.1007/978-981-19-1520-8_21</a>
+            </p>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #publications -->
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -222,6 +281,11 @@ I deeply value collaborative, innovative environments and am passionate about cr
             <li>Spring</li>
             <li>REST APIs</li>
             <li>JUnit</li>
+            <li>NonDex</li>
+            <li>iDFlakies</li>
+            <li>PyTorch</li>
+            <li>scikit-learn</li>
+            <li>Neo4j</li>
             <li>AngularJS</li>
             <li>OpenCV</li>
             <li>Keras</li>
@@ -253,7 +317,6 @@ I deeply value collaborative, innovative environments and am passionate about cr
             <li>Machine Learning</li>
             <li>Operating Systems</li>
             <li>Data Structures & Algorithms</li>
-            <li>Discrete Mathematics</li>
         </ul>
     </div>
     <!-- End #skills -->
